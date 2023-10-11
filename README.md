@@ -1,8 +1,33 @@
 ## D3D-Net
 
-#Dependences 
+### Dependences
+1.Pytorch 1.8.0  
+2.Python 3.7.1  
+3.CUDA 11.7  
+4.Ubuntu 18.04    
 
-1.Pytorch 1.8.0 <br>
-2.Python 3.7.1 <br>
-3.CUDA 11.7 <br>
-4.Ubuntu 18.04 \<br>
+### Datasets Preparation
+> ./dataset/dataset_name/train
+>> clean  
+>> hazy
+
+> ./dataset/dataset_name/test 
+>> clean  
+>> hazy
+
+> ./output_result
+
+### Pretrained Weights and Dataset  
+Download our model weights on Baidu cloud disk:  
+https://pan.baidu.com/s/1sQ5DDqMli_r-ewDzyUchIg password:pxxx
+
+Download our test datasets on Baidu cloud disk:  
+https://pan.baidu.com/s/1ZvaeTOzJ1fZI41TItf0V5A password:xpwr
+
+### Train  
+ `python train.py --type 1 -train_batch_size 4 --gpus 0 `
+
+### Test
+Put models in the `./output_result` folder.   
+`python test.py --type 1 --gpus 0 --moddel_name dataset_name.pkl `
+
