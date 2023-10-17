@@ -19,7 +19,7 @@
 
 ### Pretrained Weights and Dataset  
 Download our model weights on Baidu cloud disk:  
-https://pan.baidu.com/s/1sQ5DDqMli_r-ewDzyUchIg password:pxxx
+链接：https://pan.baidu.com/s/1ShYQs6bJ7jmnHE7eGncLcQ password:8d7t
 
 Download our test datasets on Baidu cloud disk:  
 https://pan.baidu.com/s/1ZvaeTOzJ1fZI41TItf0V5A password:xpwr
