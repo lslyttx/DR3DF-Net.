@@ -30,5 +30,6 @@ https://pan.baidu.com/s/1ZvaeTOzJ1fZI41TItf0V5A password:xpwr
 ### Test
 Put models in the `./output_result` folder.   
 `python test.py --type 1 --gpus 0 --moddel_name dataset_name.pkl `
+
 for example:`python test.py --type 1 --gpus 0 --moddel_name thin.pkl `
 
