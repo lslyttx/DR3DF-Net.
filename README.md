@@ -19,10 +19,10 @@
 
 ### Pretrained Weights and Dataset  
 Download our model weights on Baidu cloud disk:  
-链接：https://pan.baidu.com/s/1ShYQs6bJ7jmnHE7eGncLcQ password:8d7t
+https://pan.baidu.com/s/1-Q8gMOZfUrBc4J9H_-ej8w password:`0pbu`
 
 Download our test datasets on Baidu cloud disk:  
-https://pan.baidu.com/s/1ZvaeTOzJ1fZI41TItf0V5A password:xpwr
+https://pan.baidu.com/s/1ZvaeTOzJ1fZI41TItf0V5A password:`xpwr`
 
 ### Train  
  `python train.py --type 1 -train_batch_size 4 --gpus 0 `
