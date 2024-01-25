@@ -13,7 +13,6 @@ from torchvision.utils import save_image
 from tqdm import tqdm
 
 from My_Model import Base_Model, Discriminator
-from My_Model_L import Base_Model as Pre_Model
 from Model_util import padding_image
 from make import getTxt
 from perceptual import LossNetwork
@@ -110,79 +109,6 @@ elif args.type == 6:
     args.pre_name = 'pre_model_RSID.pkl'
     tag = 'RSID'
     
-#full data
-elif args.type == 7:
-    args.train_dir = '/data1/ghy/lsl/Datasets/NID/thin/'
-    args.train_name = 'hazy,clean'
-    args.test_dir = "/data1/ghy/lsl/Datasets/NID/thin/"
-    args.test_name = 'hazy,clean'
-    args.out_pic = './output_pic/NID_thin'
-    args.pre_name = 'pre_model_NID_thin.pkl'
-    tag = 'NID_thin'
-elif args.type == 8:
-    args.train_dir = '/data1/ghy/lsl/Datasets/NID/dense/'
-    args.train_name = 'hazy,clean'
-    args.test_dir = "/data1/ghy/lsl/Datasets/NID/dense/"
-    args.test_name = 'hazy,clean'
-    args.out_pic = './output_pic/NID_dense'
-    args.pre_name = 'pre_model_NID_dense.pkl'
-    tag = 'NID_dense'
-
-elif args.type == 9:
-    args.train_dir = '/data1/ghy/lsl/Datasets/NID_huafen/thin/train/'
-    args.train_name = 'hazy,clean'
-    args.test_dir = "/data1/ghy/lsl/Datasets/NID_huafen/thin/test/"
-    args.test_name = 'hazy,clean'
-    args.out_pic = './output_pic/NID_thin'
-    args.pre_name = 'pre_model_NID_thin.pkl'
-    tag = 'NID_thin'
-elif args.type == 10:
-    args.train_dir = '/data1/ghy/lsl/Datasets/NID_huafen/dense/train/'
-    args.train_name = 'hazy,clean'
-    args.test_dir = "/data1/ghy/lsl/Datasets/NID_huafen/dense/test/"
-    args.test_name = 'hazy,clean'
-    args.out_pic = './output_pic/NID_dense'
-    args.pre_name = 'pre_model_NID_dense.pkl'
-    tag = 'NID_dense'
-
-
-#********************our_data*************
-
-
-
-
-elif args.type == 11:
-    args.train_dir = '/data1/ghy/lsl/Datasets/dataset_moderation/train/'
-    args.train_name = 'hazy,clean'
-    args.test_dir = "/data1/ghy/lsl/Datasets/dataset_moderation/test/"
-    args.test_name = 'hazy,clean'
-    args.out_pic = './output_pic/moderation'
-    args.pre_name = 'pre_model_moderation.pkl'
-    tag = 'moderation_pt'
-elif args.type == 12:
-    args.train_dir = '/data1/ghy/lsl/Datasets/RICE1_ALL/'
-    args.train_name = 'hazy,clean'
-    args.test_dir = "/data1/ghy/lsl/Datasets/RICE1_ALL/"
-    args.test_name = 'hazy,clean'
-    args.out_pic = './output_pic/RICE1'
-    args.pre_name = 'pre_model_RICE1.pkl'
-    tag = 'RICE1'
-elif args.type == 13:
-    args.train_dir = '/data1/ghy/lsl/Datasets/RICE2_ALL/'
-    args.train_name = 'hazy,clean'
-    args.test_dir = "/data1/ghy/lsl/Datasets/RICE2_ALL/"
-    args.test_name = 'hazy,clean'
-    args.out_pic = './output_pic/RICE2'
-    args.pre_name = 'pre_model_RICE2.pkl'
-    tag = 'RICE2'
-elif args.type == 14:
-    args.train_dir = '/data1/ghy/lsl/Datasets/RSID_all/'
-    args.train_name = 'hazy,clean'
-    args.test_dir = "/data1/ghy/lsl/Datasets/RSID_all/"
-    args.test_name = 'hazy,clean'
-    args.out_pic = './output_pic/RSID'
-    args.pre_name = 'pre_model_RSID.pkl'
-    tag = 'RSID'
 
 print('We are training datasets: ', tag)
 
