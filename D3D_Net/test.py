@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 from torchvision.utils import save_image as imwrite
 from tqdm import tqdm
 
-from My_Model_capa import Base_Model
+from My_Model import Base_Model
 from Model_util import padding_image
 from make import getTxt
 from test_dataset import dehaze_test_dataset
