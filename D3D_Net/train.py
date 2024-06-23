@@ -223,7 +223,7 @@ for epoch in range(start_epoch, train_epoch):
             DNet.zero_grad()
             real_out = DNet(clean).mean()
             img_out = DNet(img).mean()
-            D_loss = 1 - real_out - real_out + img_out
+            D_loss = 1 - real_out + img_out
 
             # no more forward
             D_loss.backward(retain_graph=True)
