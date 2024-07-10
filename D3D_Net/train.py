@@ -233,9 +233,9 @@ for epoch in range(start_epoch, train_epoch):
             smooth_loss_l1 = F.smooth_l1_loss(img, clean)
             perceptual_loss = loss_network(img, clean)
             msssim_loss_ = -msssim_loss(img, clean, normalize=True)
-            smooth_loss_l1_img = F.smooth_l1_loss(img, clean)
 
-            total_loss = smooth_loss_l1 + 0.01 * perceptual_loss + 0.000005 * adversarial_loss + 0.5 * msssim_loss_ + 1.5 * smooth_loss_l1_img#duibi 200
+
+            total_loss = smooth_loss_l1 + 0.01 * perceptual_loss + 0.000005 * adversarial_loss + 0.5 * msssim_loss_#duibi 200
 
             total_loss.backward()
             D_optim.step()
