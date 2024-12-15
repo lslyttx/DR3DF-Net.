@@ -24,12 +24,13 @@ Download our model weights on Baidu cloud disk:
 Download our test datasets on Baidu cloud disk:  
 https://pan.baidu.com/s/1ZvaeTOzJ1fZI41TItf0V5A password:`xpwr`
 
-### Train  
- `python train.py --type 1 -train_batch_size 4 --gpus 0 `
+### 1. Train Deahzing  
+ `python mytrain_dehazing.py --type 1 -train_batch_size 4 --gpus 0 `
+### 2. Train SCFR 
+ `python mytrain_select.py --type 1 -train_batch_size 4 --gpus 0 `
 
 ### Test
 Put models in the `./output_result` folder.   
-`python test.py --type 1 --gpus 0 --moddel_name dataset_name.pkl `
+`python mytest_select.py --type 1 --gpus 0 `
 
-for example:`python test.py --type 1 --gpus 0 --moddel_name thin.pkl `
 
