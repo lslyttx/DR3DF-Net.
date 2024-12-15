@@ -30,7 +30,6 @@ https://pan.baidu.com/s/1ZvaeTOzJ1fZI41TItf0V5A password:`xpwr`
  `python mytrain_select.py --type 1 -train_batch_size 4 --gpus 0 `
 
 ### Test
-Put models in the `./output_result` folder.   
 `python mytest_select.py --type 1 --gpus 0 `
 
 
